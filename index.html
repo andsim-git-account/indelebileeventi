@@ -16,37 +16,38 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             text-align: center;
+            height: 100vh;
+            overflow: hidden;
         }
 
         h1 {
-            font-size: 4rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
+            font-size: 10vw; /* Si adatta dinamicamente alla larghezza dello schermo */
+            font-weight: 700;
+            margin: 0 5vw;
+            line-height: 1.1;
+            word-wrap: break-word;
         }
 
         h2 {
-            font-size: 2rem;
-            font-weight: normal;
-            opacity: 0.7;
+            font-size: 5vw; /* Anche questo è responsive */
+            font-weight: 300;
+            opacity: 0.8;
+            margin-top: 3vh;
         }
 
-        .divider {
-            width: 60%;
-            height: 2px;
-            background: #fff;
-            margin: 20px 0;
-            opacity: 0.3;
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 5vw;  /* su tablet/desktop diventa proporzionato */
+            }
+            h2 {
+                font-size: 2vw;
+            }
         }
     </style>
 </head>
 <body>
     <h1>indelebileeventi.com</h1>
-    <div class="divider"></div>
     <h2>🚧 Sito in costruzione 🚧</h2>
-    <h2>Torna presto!</h2>
 </body>
 </html>
-

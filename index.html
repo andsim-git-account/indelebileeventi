@@ -21,8 +21,15 @@
             overflow: hidden;
         }
 
+        .logo {
+            width: 20vw;
+            max-width: 200px;
+            margin-bottom: 4vh;
+            filter: invert(1); /* rende bianco lo svg */
+        }
+
         h1 {
-            font-size: 10vw; /* Si adatta dinamicamente alla larghezza dello schermo */
+            font-size: 10vw;
             font-weight: 700;
             margin: 0 5vw;
             line-height: 1.1;
@@ -30,7 +37,7 @@
         }
 
         h2 {
-            font-size: 5vw; /* Anche questo è responsive */
+            font-size: 5vw;
             font-weight: 300;
             opacity: 0.8;
             margin-top: 3vh;
@@ -38,7 +45,7 @@
 
         @media (min-width: 768px) {
             h1 {
-                font-size: 5vw;  /* su tablet/desktop diventa proporzionato */
+                font-size: 5vw;
             }
             h2 {
                 font-size: 2vw;
@@ -47,6 +54,7 @@
     </style>
 </head>
 <body>
+    <img src="images/logo.svg" alt="Logo" class="logo">
     <h1>indelebileeventi.com</h1>
     <h2>🚧 Sito in costruzione 🚧</h2>
 </body>
